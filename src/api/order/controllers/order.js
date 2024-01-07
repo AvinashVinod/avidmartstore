@@ -7,7 +7,7 @@ const stripe = require("stripe")(process.env.STRIPE_KEY);
 const { createCoreController } = require("@strapi/strapi").factories;
 
 // Define the base URL
-const BASE_URL = "http://localhost:1337";
+const BASE_URL = "https://avidmartstore.onrender.com";
 
 module.exports = createCoreController("api::order.order", ({ strapi }) => ({
   async create(ctx) {
